@@ -4,8 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm Practical Exam</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Midterm Practical Exam</h1>
+    <!-- Header and Navigation -->
+    <header>
+        <h1>My Midterm Website</h1>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#schedule">Schedule</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section 1: About -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my midterm website project.</p>
+            <img src="assets/profile.jpg" alt="A photo of the student profile">
+        </section>
+
+        <!-- Section 2: Simple Table -->
+        <section id="schedule">
+            <h2>Class Schedule</h2>
+            <table>
+                <caption>My Weekly Schedule</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Class</th>
+                        <th scope="col">Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>No Classes</td>
+                        <td>Rest</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td>Online Classes</td>
+                        <td>10 AM - 7PM</td>
+                    </tr>
+                     <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>Face to Face Classes</td>
+                        <td>10 AM - 7PM</td>
+                    </tr>
+                     <tr>
+                        <th scope="row">Thursday</th>
+                        <td>Face to Face Classes</td>
+                        <td>10AM - 1PM</td>
+                    </tr>
+                     <tr>
+                        <th scope="row">Friday</th>
+                        <td>Online Classes</td>
+                        <td>10 AM - 3PM</td>
+                    </tr>
+                     <tr>
+                        <th scope="row">Saturday</th>
+                        <td>Face to Face Classes</td>
+                        <td>10 AM - 7PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sunday</th>
+                        <td>No Classes</td>
+                        <td>Rest</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 3: Simple Form -->
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </p>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Student Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
